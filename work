@@ -1,0 +1,32 @@
+public class Sorts{
+    public static String name(){
+	return "09.Iqbal.Mohammed";
+    }
+    public static void selectionSort(int[] data){
+	for (int i=0; i<data.length-1; i++){
+	    int lowest;
+	    for (int j=i+1; j<data.length; j++){
+		if (data[j]<data[i]){
+		    lowest=data[j];
+		}
+	    }
+	    data[i]= lowest;
+	}
+    }
+    /* Personal use */
+    public String toString(int [] data){
+	ary="[";
+	for (int x=0;x<data.length; x++){
+	    ary=ary+data[x]+ ",";
+	}
+	ary="]";
+	return ary;
+    }
+    public void main(String args){
+	int[] a = {9,3 6,3,5,7,2,5,11,20};
+	System.out.println(toString(a));
+	selectionSort(a);
+	System.out.println(toString(a));
+    }
+}
+
