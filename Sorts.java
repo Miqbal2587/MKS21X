@@ -6,11 +6,12 @@ public class Sorts{
 	int lowest;
 	for (int i=0; i<data.length-1; i++){
 	    lowest=data[i];
-	    for (int j=i+1; j<data.length; j++){
-		if (data[j]<data[i]){
-		    lowest=data[j];
+	    if (data[i]>data[i+1]){
+		for (int j=i; j<=0 ; j--){
+		    if (
 		}
 	    }
+	    
 	    data[i] = lowest;
 	}
     }
@@ -31,6 +32,6 @@ public class Sorts{
 	}
 	System.out.println(a[0]);
 	selectionSort(a);
-	System.out.println(a[0]);
+	System.out.println(a[9]);
     }
 }
